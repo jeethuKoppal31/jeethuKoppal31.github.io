@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jeethu Koppal — Developer</title>
+  <meta name="description" content="Jeethu Koppal — Full-stack developer. Python, Django, HTML, CSS, JavaScript." />
+  <style>
+    :root {
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height:100%; margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; color:#e6eef8; background:linear-gradient(180deg,#071224 0%, #071227 60%); -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    .container { max-width:1000px; margin:40px auto; padding:28px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; box-shadow:0 8px 30px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03); }
+
+    header { display:flex; gap:18px; align-items:center; }
+    .avatar { width:84px; height:84px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#60a5fa); display:flex; align-items:center; justify-content:center; color:#04263b; font-weight:700; font-size:28px; }
+    .intro h1 { margin:0; font-size:24px; }
+    .intro p { margin:6px 0 0; color:var(--muted); font-size:14px; }
+    nav { display:flex; gap:10px; margin-top:18px; flex-wrap:wrap; }
+    .pill { background:var(--glass); padding:8px 12px; border-radius:999px; font-size:13px; color:var(--muted); border:1px solid rgba(255,255,255,0.02); }
+    .contact { margin-left:auto; text-align:right; }
+    .contact a { display:block; color:var(--muted); font-size:14px; }
+
+    main { display:grid; grid-template-columns:1fr 320px; gap:22px; margin-top:22px; }
+    aside { display:block; width:320px; } /* fixed sidebar width */
+
+    .card { background:linear-gradient(180deg,var(--glass),var(--glass-2)); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.02); }
+    h2 { margin:0 0 10px; font-size:16px; }
+    .muted { color:var(--muted); font-size:14px; }
+    .skills { display:flex; flex-direction:column; gap:8px; }
+    .skill { display:flex; justify-content:space-between; align-items:center; background:#071a2a; padding:8px 10px; border-radius:8px; font-size:13px; border:1px solid rgba(255,255,255,0.02); }
+    .stars { color:gold; font-size:14px; }
+    .project { margin-bottom:12px; }
+    .project h3 { margin:0; font-size:15px; }
+    .project p { margin:6px 0 0; color:var(--muted); font-size:13px; }
+    .meta { display:flex; gap:12px; color:var(--muted); font-size:13px; margin-top:8px; }
+    footer { text-align:center; margin-top:24px; color:var(--muted); font-size:13px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:10px; background:linear-gradient(90deg,#2dd4bf,#60a5fa); color:#04263b; font-weight:600; border:none; cursor:pointer; }
+    .outline { background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--muted); padding:8px 12px; border-radius:10px; }
+    .role { color:var(--accent); font-weight:600; }
+    .divider { height:1px; background:linear-gradient(90deg,transparent,#2b3746,transparent); margin:12px 0; border-radius:2px; }
+    ul { padding-left:16px; margin:6px 0; }
+
+    /* Sticky sidebar wrapper */
+    .sticky-wrapper {
+      position: sticky;
+      top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    aside .card { position: static; } /* remove sticky from individual cards */
+
+    /* Responsive */
+    @media (max-width:880px) {
+      main { grid-template-columns:1fr; }
+      .sticky-wrapper { position: static; }
+      header { flex-direction: column; align-items:flex-start; }
+      .contact { text-align:left; margin-left:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">JK</div>
+      <div class="intro">
+        <h1>JEETHU KOPPAL <span class="role">— Developer</span></h1>
+        <p class="muted">Kerala, India • Python & Django developer • Responsive web apps</p>
+        <nav>
+          <a class="pill" href="#about">About</a>
+          <a class="pill" href="#projects">Projects</a>
+          <a class="pill" href="#skills">Skills</a>
+          <a class="pill" href="#experience">Experience</a>
+          <a class="pill" href="#education">Education</a>
+        </nav>
+      </div>
+      <div class="contact">
+        <a href="tel:+919995662428">+91 99956 62428</a>
+        <a href="mailto:koppaljeethu23@gmail.com">koppaljeethu23@gmail.com</a>
+        <a href="https://github.com/jeethuKoppal31" target="_blank">github.com/jeethuKoppal31</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <!-- About / Projects / Skills same as before -->
+        <div id="about" class="card">
+          <h2>Professional Summary</h2>
+          <p class="muted">Motivated and detail-oriented developer with hands-on experience in building web applications using Python and the Django framework. Proficient in creating responsive and interactive user interfaces with HTML, CSS, and JavaScript. Strong understanding of relational databases, especially MySQL, and version control using Git.</p>
+</div>
+          <div class="divider"></div>
+<div class="card">
+          <h2 id="projects">Selected Projects</h2>
+          <div class="project">
+            <h3>Membership App — Tharavad Committee Management System</h3>
+            <p class="muted">A secure Django application for Tharavad committees with role-based access and a user-friendly dashboard for managing members. Admins manage users and membership data.</p>
+            <div class="meta"><span>Tech: Django, Python, MySQL</span><span>Role: Developer</span></div>
+            <p><a href="https://github.com/jeethuKoppal31/Contact-Manager-Application" target="_blank" class="outline">🔗 View on GitHub</a></p>
+          </div>
+          <div class="project">
+            <h3>ChartMySurve</h3>
+            <p class="muted">Upload your survey, get instant insights in charts. ChartMySurvey is a Django-based web application that allows users to upload survey data in Excel format and instantly visualize the responses as interactive graphs.</p>
+            <div class="meta"><span>Tech: Django, Python, JavaScript</span><span>Role: Developer</span></div>
+            <p><a href="https://github.com/jeethuKoppal31/ChartMySurvey" target="_blank" class="outline">🔗 View on GitHub</a></p>
+          </div>
+</div>
+          <div class="divider"></div>
+<div class="card">
+          <h2 id="experience">Work Experience</h2>
+          <div style="margin-top:8px">
+            <strong>Assistant Professor</strong> — Greenwoods Arts and Science College Palakunnu<br>
+            <span class="muted">Feb 2024 — Mar 2025</span>
+            <ul class="muted"><li>Taught Database Management Systems, Web Development, and Software Engineering.</li></ul>
+            <strong>Intern</strong> — Ehackify Cybersecurity Research & Training<br>
+            <span class="muted">Jun 2023 — Aug 2023</span>
+            <ul class="muted"><li>Worked on a Comprehensive Vulnerability Management project using Python and Django.</li></ul>
+          </div>
+</div>
+ <div class="divider"></div>
+<div class="card">
+         
+          <h2 id="education">Education</h2>
+          <p><strong>MCA</strong> — Chinmaya Institute of Technology, Kannur <span class="muted">(2021 – 2023)</span></p>
+          <p><strong>BCA</strong> — Greenwoods Arts and Science College, Kasaragod <span class="muted">(2018 – 2021)</span></p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2 id="skills">Technical Skills</h2>
+          <div class="skills" style="margin-top:8px">
+            <div class="skill"><span>Python</span><span class="stars">★★★★★</span></div>
+            <div class="skill"><span>Django</span><span class="stars">★★★★★</span></div>
+            <div class="skill"><span>HTML</span><span class="stars">★★★★★</span></div>
+            <div class="skill"><span>CSS</span><span class="stars">★★★★★</span></div>
+            <div class="skill"><span>JavaScript</span><span class="stars">★★★★★</span></div>
+            <div class="skill"><span>Bootstrap</span><span class="stars">★★★★☆</span></div>
+            <div class="skill"><span>ReactJS</span><span class="stars">★★☆☆☆</span></div>
+            <div class="skill"><span>SQLite</span><span class="stars">★★★★★</span></div>
+            <div class="skill"><span>MySQL</span><span class="stars">★★★★★</span></div>
+            <div class="skill"><span>PostgreSQL</span><span class="stars">★★★★☆</span></div>
+            <div class="skill"><span>Git</span><span class="stars">★★★★☆</span></div>
+          </div>
+ </div>
+          <div class="divider"></div>
+	 <div class="card"
+          <h2>Languages</h2>
+          <p class="muted">English, Malayalam</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="sticky-wrapper">
+          <div class="card">
+            <h2>Contact</h2>
+            <p class="muted">Kerala, India</p>
+            <p style="margin-top:8px"><a class="btn" href="mailto:koppaljeethu23@gmail.com">Email Me</a></p>
+            <p style="margin-top:10px"><a class="outline" href="https://github.com/jeethuKoppal31" target="_blank">View GitHub</a></p>
+            <div class="divider"></div>
+            <p style="margin-top:8px"><a class="outline" href="mailto:koppaljeethu23@gmail.com?subject=Request%20for%20CV%20PDF&body=Hi%20Jeethu%2C%0A%0APlease%20send%20me%20a%20copy%20of%20your%20CV.%0A%0AThanks%2C">Request CV</a></p>
+          </div>
+
+          <div class="card">
+            <h2>Quick Links</h2>
+            <p class="muted"><strong>GitHub:</strong> <a href="https://github.com/jeethuKoppal31" target="_blank">github.com/jeethuKoppal31</a></p>
+	    <p class="muted"><strong>LinkdIn:</strong> <a href="https://www.linkedin.com/in/jeethu-koppal-448516222/" target="_blank">linkdin.com/jeethu-koppal</a></p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Built with ❤️ • Jeethu Koppal — Kerala, India</small>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const id = a.getAttribute('href').substring(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+         
